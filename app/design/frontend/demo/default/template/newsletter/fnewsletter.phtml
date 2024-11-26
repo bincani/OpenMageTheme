@@ -1,6 +1,7 @@
 <?php
-	$newsletter = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'wysiwyg/newsletter.jpeg';  
-	list($width, $height) = getimagesize($newsletter);
+//$newsletter = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'wysiwyg/newsletter.jpeg';
+$newsletter = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN) . 'frontend/demo/default/images/misc/newsletter.jpg';
+list($width, $height) = getimagesize($newsletter);
 ?>
 <div class="fnewsletter container">
 	<img class="background lazy" data-src="<?php echo $newsletter; ?>" width="<?php echo $width ?>" height="<?php echo $height ?>" alt="<?php echo $this->__('Newsletter') ?>" />
