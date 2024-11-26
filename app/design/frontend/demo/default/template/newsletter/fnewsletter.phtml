@@ -13,7 +13,7 @@ list($width, $height) = getimagesize($newsletter);
 		<form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="fnewsletter-validate-detail">
 			<div class="input">
 				<input type="text" name="email" id="newsletter" title="<?php echo $this->__('Newsletter') ?>" class="required-entry validate-email" value="<?php echo $this->__('Enter your email address') ?>" onblur="if(this.value == '') { this.value='<?php echo $this->__('Enter your email address') ?>'}" onfocus="if (this.value == '<?php echo $this->__('Enter your email address') ?>') {this.value=''}" />
-				<?php echo $this->getLayout()->createBlock('degriz_gdprnewsletter/newsletter')->setTemplate('degriz/gdprnewsletter/newsletter.phtml')->toHtml(); ?>
+				<?php // echo $this->getLayout()->createBlock('degriz_gdprnewsletter/newsletter')->setTemplate('degriz/gdprnewsletter/newsletter.phtml')->toHtml(); ?>
 			</div>
 			<button type="submit" title="<?php echo $this->__('Subscribe') ?>" class="button btn-cart"><span><span><?php echo $this->__('Subscribe') ?></span></span></button>
 		</form>
